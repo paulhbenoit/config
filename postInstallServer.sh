@@ -39,9 +39,10 @@ sudo -H -u ${newuser} sed -e '/ZSH_THEME="robbyrussell"/ s/^#*/# /' -i /home/${n
 
 sudo -H -u ${newuser} sed '/# ZSH_THEME="robbyrussell"/a\ZSH_THEME="bira"' -i /home/${newuser}/.zshrc
 
-sudo -H -u ${newuser} cat >> /home/${newuser}/.bashrc << EOF
-exec zsh
-EOF
+# TODO: 
+# sudo -H -u ${newuser} cat >> /home/${newuser}/.bashrc << EOF
+# exec zsh
+# EOF
 
 sudo -H -u ${newuser} cat >> /home/${newuser}/.zshrc << EOF
 ###############################################################################
