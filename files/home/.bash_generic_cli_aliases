@@ -1,0 +1,51 @@
+###############################################################################
+# generic
+###############################################################################
+alias ll='ls -ail'
+alias lh='ls -ailh'
+alias la='ls -A'
+
+alias psg='ps aux|grep'
+
+alias dfh='df -h'
+alias dus='du -sh'
+
+alias s='sudo'
+alias k='killall'
+alias K='sudo killall'
+
+alias svi='sudo vi'
+
+alias spo='sudo poweroff'
+alias sro='sudo reboot'
+
+###############################################################################
+# aptitude
+###############################################################################
+
+alias asn='apt-cache search -n'
+alias ai='sudo apt-get install'
+alias ay='sudo apt-get install -y'
+alias aud='sudo apt-get update'
+alias aug='sudo apt-get upgrade'
+alias ashow='apt-cache show'
+
+alias pkgs='dpkg --get-selections |grep'
+
+###############################################################################
+# rsync
+###############################################################################
+
+alias dorsync='rsync --progress --stats --compress --recursive --size-only --delete -l'
+alias drysync='dorsync --dry-run'
+
+###############################################################################
+# utils
+###############################################################################
+
+alias pigo='ping www.google.fr'
+alias vi='vim'
+alias findn='find . -name'
+alias gpwd='for ((n=0;n<10;n++)); do dd if=/dev/urandom count=1 2> /dev/null | uuencode -m -| sed -ne 2p | cut -c-8; done'
+alias ytmp3='youtube-dl -x --audio-format mp3'
+
