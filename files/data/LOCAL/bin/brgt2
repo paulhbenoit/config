@@ -1,0 +1,6 @@
+#!/bin/bash
+a=$1
+b=$(cat /sys/class/backlight/intel_backlight/max_brightness)
+#echo $b
+c=$(bc <<< "$b/$a") 
+echo $c | sudo tee /sys/class/backlight/intel_backlight/brightness
